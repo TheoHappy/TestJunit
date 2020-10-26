@@ -3,10 +3,10 @@ public class Locator {
 	Door door;
 	Window window;
 	Roof roof;
-	public Locator(){
-		door = new Door();
-		window = new Window();
-		roof = new Roof();
+	public Locator(Door door, Window window, Roof roof){
+		this.door = door;
+		this.window = window;
+		this.roof = roof;
 	}
 	protected Door getDoor(){
 		return door;
@@ -18,3 +18,5 @@ public class Locator {
 		return window;
 	}
 }
+
+
